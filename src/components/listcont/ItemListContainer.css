@@ -1,0 +1,673 @@
+
+
+.greeting {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 6rem auto;
+    width: fit-content;
+    transition: 0.5s all ease-in-out;
+    padding: 1rem 1rem;
+    animation: jump infinite 2s ease-in-out;
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
+
+
+  
+}
+
+
+.greeting:hover {
+    background-color: rgb(120,168,141);
+    filter: blur(0);
+    animation: none;
+}
+
+.itemsCont {
+    padding: 0rem 3rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: top;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.cardcont {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 260px;
+    height: fit-content;
+    padding: 0rem 0rem 1rem 0rem;
+    color: white;
+    margin: 0.5rem;
+    justify-content:space-between ;
+    border-radius: 20px;
+    transition: 0.5s all ease-in-out;
+    opacity: 75%;
+    background-color: rgb(77, 77, 77);
+    cursor: pointer;
+}
+
+.cardcont:hover {
+    opacity: 100%
+}
+
+.cardcont2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 260px;
+    height: fit-content;
+    padding: 0rem 0rem 2rem 0rem;
+    color: rgb(88, 88, 88);
+    margin: 0.5rem;
+    justify-content:space-between ;
+    border-radius: 20px;
+    transition: 0.5s all ease-in-out;
+    opacity: 100%;
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+
+}
+
+.cardimg {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    transition: 0.2s all ease-in-out;
+}
+
+.cardimg:hover {
+    height: 285px;
+}
+
+.cardTitulo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0.5rem 0rem;
+    padding: 0rem 2rem;
+
+}
+
+.cardDescripcion {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    margin: 0rem 0rem 2rem;
+    padding: 0rem 2rem;
+}
+
+
+
+.contador-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem;
+    width: 100%;
+    color: white;
+}
+
+.aftercontador-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem;
+    width: 100%;
+    color: white;
+}
+
+.contador {
+    font-size: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    background: none;
+    color: white;
+    border: 2px solid rgb(192, 104, 104);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contador:hover {
+    animation: borderglow infinite 3s ease-in-out;
+
+}
+
+
+
+.AddRemoveButton {
+    font-size: 1rem;
+    height: 2rem;
+    width: 6rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.AddRemoveButton:hover {
+    color: rgb(192, 104, 104);
+    font-weight: bolder;
+}
+
+.addCartButtonCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+
+.toprightradius {
+    border-radius: 0px 5px 0px 0px;
+}
+
+.topleftradius {
+    border-radius: 5px 0px  0px 0px;
+}
+
+.addCartButton {
+width: 3rem;
+height: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+background-color: white;
+color: rgb(192, 104, 104);
+padding: 0.5rem;
+border: none;
+cursor: pointer;
+font-family: 'Montserrat', sans-serif;
+transition: 0.5s all ease-in-out;
+position: relative;
+bottom: 0.7rem;
+}
+
+.addCartButton:hover {
+color: white;
+background-color: rgb(192, 104, 104);
+font-weight: bold;
+bottom: 1rem;
+}
+
+.opacidad {
+    display: none;
+}
+
+.ultimosDisp {
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ultimosDispNo {
+    font-size: 0.8rem;
+    color: rgb(192, 104, 104);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.carritoadd {
+    width: 1.5rem;
+}
+
+/* ITEM DETAIL */
+
+.itemdetailcont {
+    margin: 3rem auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 25px;
+    background-color: #2e333d;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234f4f4f' fill-opacity='0.35' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.itemdetailDerCont {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.itemdetailimg {
+    border-radius: 15px;
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+
+}
+
+.itemdetailPrecio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #2e333d;
+    border: rgb(255, 255, 255, 20%) 1px solid;
+    margin: 1rem auto;
+    border-radius: 10px;
+    width: fit-content;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+
+.itemdetailTitulo {
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0.5rem 0rem;
+    padding: 0rem 2rem;
+    color: white;
+}
+
+.itemdetailDescripcion {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 2rem;
+    padding: 0rem 2rem;
+    color: white;
+}
+
+
+.ItemDetailListCont {
+    padding: 0rem 3rem;
+    margin: 0 auto 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+/* FILTER */
+
+.filtercont {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    
+    width: fit-content;
+}
+
+.filterelement {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(99, 86, 86);
+    opacity: 50%;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s all;
+    cursor: pointer;
+    filter: blur(0.8px);
+    color: white;
+    text-decoration: none;
+
+}
+
+.aftercountboton {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(99, 86, 86);
+    opacity: 50%;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s all;
+    cursor: pointer;
+    filter: blur(0.8px);
+    color: white;
+    text-decoration: none;
+
+}
+
+.aftercountboton:hover {
+    opacity: 100%;
+    letter-spacing: 0.13rem;
+    filter: blur(0px);
+    background-color: rgb(192, 104, 104);
+}
+
+
+.texto {
+    color: white;
+}
+
+.filterelementfilt {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(106, 136, 145);
+    border-radius: 10px;
+    transition: ease-in-out 0.5s all;
+    cursor: pointer;
+}
+
+.filterelement:hover {
+    opacity: 100%;
+    letter-spacing: 0.13rem;
+    filter: blur(0px);
+    background-color: rgb(192, 104, 104);
+}
+
+.filterelementimg {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    padding: 0.35rem 0.7rem;
+    background-color: rgb(99, 86, 86);
+    border-radius: 10px;
+    transition: ease-in-out 0.5s all;
+    cursor: pointer;
+    opacity: 50%;
+    filter: blur(0.8px);
+    color: white;
+    text-decoration: none;
+
+}
+
+.filterelementimg:hover {
+    opacity: 100%;
+    letter-spacing: 0.13rem;
+    filter: blur(0px);
+    background-color: rgb(192, 104, 104);
+}
+
+
+.backhomeimg {
+
+    filter: invert(1);
+}
+
+
+/* BOTONES DE TALLES */
+.tallesCont {
+    margin: 1rem;
+}
+.tallesButton {
+ 
+    margin: 0 0.2rem;
+    padding: 0.5rem;
+    border-radius: 0 5px 5px 5px;
+    color: white;
+    background-color: #2e333d;
+    border: rgb(255, 255, 255, 20%) 1px solid;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+
+.tallesButton:hover {
+    background-color: rgb(192, 104, 104);
+}
+
+/* ITEM LIST CONTAINER PARA EL DETAIL */
+
+.itemListContainerDetail {
+    margin-top: 10rem;
+}
+
+/* CAMBIAR IMG */
+.cambiarImgBotonCont {
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    position: relative;
+    bottom: 2rem;
+}
+.cambiarImgBoton {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    text-decoration: none;
+    border: none;
+    opacity: 50%;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+
+.cambiarImgBoton:focus {
+    opacity: 100%;
+}
+
+.cambiarImgBoton:hover {
+    opacity: 100%;
+}
+
+.imgContDetail {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LOADER */
+
+
+.cardcontloader {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 252px;
+    height: 370px;
+    padding: 0rem 0rem 1rem 0rem;
+    color: white;
+    margin: 0.5rem;
+    justify-content:space-between ;
+    border-radius: 20px;
+    transition: 0.5s all ease-in-out;
+    opacity: 45%;
+    background-color: rgb(77, 77, 77);
+    cursor: pointer;
+    animation: cartloader infinite 1s ease-in-out;
+
+}
+
+.loaderCont {
+    padding: 0rem 3rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.loaderDetail {
+    width: 65%;
+    height: 550px;
+    margin-top: 2rem;
+    border-radius: 15px;
+    margin: 3rem auto;
+    animation: cartloader infinite 2s ease-in-out;
+
+}
+
+
+.vcenter {
+    margin-top: 15rem;
+}
+
+.margintop1 {
+    margin-top: 0.5rem;
+}
+
+
+.regresarButton {
+ 
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 0 5px 5px 5px;
+    color: white;
+    background-color: #2e333d;
+    border: rgb(255, 255, 255, 20%) 1px solid;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.regresarButton:hover {
+    background-color: rgb(192, 104, 104);
+    transform: translateY(5px);
+}
+
+.addCartButtoncero {
+    transform: rotate(45deg);
+}
+
+/* EFECTOS */
+
+@keyframes cartloader {
+    0% {filter: blur(0);    
+        background-color: rgb(192, 192, 192);}
+
+    50% {filter: blur(3px);
+        background-color: rgb(77, 77, 77);;}  
+
+    100% {filter: blur(0);
+        background-color: rgb(192, 192, 192)}
+}
+
+
+@keyframes jump {
+    0% {filter: blur(0);}
+
+    50% {filter: blur(3px);
+    color: rgb(120,168,141);
+transform: translateY(5px);}  
+
+    100% {filter: blur(0);}
+}
+
+
+@keyframes borderglow {
+    0% {    border: 2px solid rgb(192, 104, 104);
+    }
+
+    50% {    border: 2px solid rgb(206, 206, 206);
+    }  
+
+    100% {    border: 2px solid rgb(192, 104, 104);
+    }
+}
+
+
+.backold {
+    background-color: rgb(211, 186, 78);
+}
+
+.backeip {
+    background-color: rgb(192, 104, 104);
+}
+
+.backethath {
+    background-color: rgb(148, 130, 180);
+}
+
+.backcake{
+    background-color: rgba(106, 136, 145);
+}
+
+.backmeta {
+    background-color: rgb(235, 178, 93);
+}
+
+
+
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 601px) {
+
+    .none-desktop {
+        display: none !important;
+    }
+ }
+
+ @media only screen and (min-width: 600px) and  (max-width: 1200px) {
+
+
+ }
+
+
+ @media only screen and (min-width: 100px) and  (max-width: 600px) {
+
+    .none-mobile {
+        display: none !important;
+    }
+
+    
+    .itemdetailcont {
+        margin: 3rem auto;
+        padding: 1rem 0rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        background-color: #2e333d;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234f4f4f' fill-opacity='0.35' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .itemdetailimg {
+        border-radius: 15px;
+        width: 90%;
+        height: 20rem;
+        margin: 0 auto;
+        object-fit: cover;
+    
+    }
+
+
+    .itemdetailDescripcion {
+        margin: 0.5rem;
+    }
+
+    .aftercountboton {
+        margin: 0.5rem 0rem;
+    }
+
+    .aftercontador-cont {
+
+        flex-direction: column;
+   
+    }
+    
+
+    .filterelementimg {
+        margin: 0.5rem 0rem;
+    }
+}

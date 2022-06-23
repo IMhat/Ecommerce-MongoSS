@@ -1,0 +1,206 @@
+
+nav {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.5rem;
+    font-size: 0.6rem;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.logoIcon {
+    position: absolute;
+    color: rgb(120,168,141);
+    top: 0.5rem;
+    left: 1rem;
+    height: 4rem;
+    transition: 0.5s all ease-in-out;
+}
+
+.logoIcon:hover {
+    height: 4.1rem;
+}
+
+
+.menu-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    text-decoration: none;
+    align-items: left;
+}
+
+.logoCarrito {
+    height: 2.5rem;
+    width: 2.5rem;
+    filter: invert(1);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.logoCarrito:hover {
+    transform: rotate(10deg);
+    filter: invert(0.6);
+}
+
+.active {
+    background-color: white;
+    color: rgb(120,168,141);
+}
+
+.menu-item {
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    padding: 0.5rem 1rem;
+    color: white;
+    margin: 0rem 0.5rem;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.menu-item:hover {
+    background-color: white;
+    color: black ;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+.homecart {
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    text-decoration: none;    
+}
+.cartcant {
+
+    font-size: 0.8rem;
+    color: white;
+    position: relative;
+    bottom: 1.4rem;
+    right: 0.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    letter-spacing: 0.1rem;
+    background-color: rgb(192, 104, 104);
+    padding: 0.2rem 0.4rem;
+}
+
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 0rem;
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 601px) {
+
+    .none-desktop {
+        display: none !important;
+    }
+ }
+
+ @media only screen and (min-width: 600px) and  (max-width: 1200px) {
+
+
+ }
+
+
+ @media only screen and (min-width: 100px) and  (max-width: 600px) {
+
+    .none-mobile {
+        display: none !important;
+    }
+
+
+    
+.menu-cont {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -1rem;
+    padding-top: 10rem;
+    background-color: black;
+    width: 100%;
+    height: 110%;
+    z-index: 90;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.menu-itemmob {
+    margin: 0.5rem 0rem;
+}
+
+.menu-item {
+    padding: 0.5rem 2rem;
+
+    font-size: 0.8rem;
+    width: fit-content;
+}
+
+.menumobile {
+    display: none;
+}
+
+.logoIcon {
+    left: 0.5rem;
+    height: 2.5rem;
+
+}
+
+.logoIcon:hover {
+    height: 2.5rem;
+}
+
+
+.homecart {
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+
+.menumobilebutton {
+    font-size: 3rem;
+    color: white;
+    font-weight: lighter;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    z-index: 100;
+    position: absolute;
+    transform: rotate(180deg);
+    top: 0rem;
+} 
+
+.menumobilebuttonClick {
+    font-size: 2rem;
+    color: rgb(192, 104, 104);
+    font-weight: lighter;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    z-index: 100;
+    position: absolute;
+    top: 0rem;
+} 
+
+
+}
